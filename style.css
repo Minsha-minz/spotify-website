@@ -1,0 +1,288 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+
+.navbar-brand img {
+  margin-right: 20px;
+}
+/* Add your custom styles here */
+.hero-section {
+  padding: 80px 0;
+}
+
+.feature-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.feature-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.feature-list-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.feature-list-item h3 {
+  margin-bottom: 10px;
+}
+
+.feature-list-item p {
+  font-size: 18px;
+  color: #666;
+}
+
+.accordion-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  text-align: left;
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #f0f0f0;
+}
+
+.accordion-button.collapsed {
+  background-color: #fff;
+  color: #333;
+}
+
+.accordion-body {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+}
+/* Ensure navbar-toggler is on the right */
+.navbar-toggler {
+  order: 1; /* Adjust order to move to the right */
+}
+
+/* Ensure navbar-collapse is on the right */
+.navbar-collapse {
+  order: 2; /* Adjust order to move to the right */
+}
+
+/* Dropdown menu on the right */
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.nav-link:hover {
+  color: green !important;
+}
+
+
+.navbar-nav .nav-link {
+  color: #FFFFFF; /* Setting text color to white */
+}
+
+
+
+.dropdown-menu {
+  background-color: #000000; /* Dark background for dropdown */
+}
+
+.dropdown-item {
+  color: #FFFFFF; /* Text color for dropdown items */
+}
+
+/* Adjust the dropdown menu to right side */
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* Hide dropdown menu after mouse leaves */
+.navbar-nav > .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+  /* Basic styles for header and navigation */
+  .navbar {
+    background: #000;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin: 0;
+   
+  }
+
+  .navbar-brand img {
+    height: 2rem;
+  margin-left: 35px;
+  
+  }
+
+  .navbar-toggler {
+    border-color: #fff;
+    border-width: 2px;
+    
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin-right: 60px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+
+
+  .dropdown-menu {
+    background-color: #000;
+    border-width: 2px;
+  }
+
+  .dropdown-item {
+    color: #fff
+   
+  }
+
+  .dropdown-item:hover {
+    background-color:#fff;
+    color: #0c0c0c;
+  }
+
+  .dropdown-divider {
+    border-top-color: rgba(23, 21, 21, 0.2);
+  }
+.navbar{
+  position: fixed;
+  top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 54px;
+  display: block;
+  z-index: 1000;
+}
+
+  
+
+    
+  
+    .text-center {
+      text-align: center;
+    }
+    
+    .img-fluid {
+      max-width: 55px;
+      height: 75px;;
+    }
+    
+    .mb-3 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-0 {
+      margin-bottom: 0;
+    }
+    /* Additional CSS for hiding image on larger screens */
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+}
+.ready-section{
+  text-align: center;
+    width: 100%;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    }
+.btn {
+  color: #fff;
+border-width: 0;
+border-color: #fff;
+border-radius: 30%;
+}
+#spotify-footer{
+  background-color: #000;
+  text-decoration: none;
+}
+    /* Add your custom styles here */
+    .container5 {
+    
+        padding: 40px 0;
+        text-decoration: none;
+    }
+
+   .container5 h5 {
+        color: #333;
+    }
+    .container5 ul {
+        list-style: none;
+        padding-left: 0;
+        color: #fff;
+    }
+    .container5 a{
+      text-decoration: none;
+    }
+    .container5 ul li {
+      list-style: none;
+        margin-bottom: 10px;
+    }
+    .social-icons {
+        list-style: none;
+        padding-left: 0;
+    }
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .social-icons li a {
+        color: #333;
+        font-size: 20px;
+    }
+    .bottom-links {
+        list-style: none;
+        padding-left: 0;
+    }
+    .bottom-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .navbar-nav .nav-item:nth-child(3) .nav-link::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 17px; /* Adjust height as needed */
+      background-color: rgba(248, 246, 246, 0.948); /* Adjust color and opacity as needed */
+      margin: 0 auto;
+      margin-top: -20px;
+      margin-left: 90px;
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+   
+   
+   

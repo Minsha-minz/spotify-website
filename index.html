@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="spotify images/spotify.svg">
+    <link rel="stylesheet" href="spotifyweb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+
+<body>
+        <style>
+            .navbar-nav .dropdown-menu {
+                right: 0;
+                left: auto;
+                background-color: #000;
+                
+            }
+
+            .navbar-nav .dropdown-menu .dropdown-item {
+                color: #ffffff;
+  
+            }
+
+            .nav-link:hover {
+                color: green !important;
+            }
+
+            .navbar-nav .nav-item {
+                color: #fff;
+            }
+
+            .navbar {
+
+                justify-content: space-between;
+                display: flex;
+                box-sizing: border-box;
+                background: #000;
+            }
+
+            .navbar-dark .navbar-nav .dropdown-menu {
+                background: #000;
+            }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container p-3">
+                <a class="navbar-brand" href="#">
+                    <img src="spotify images/spoweb.png" alt="Spotify Icon" width="30" height="24"
+                        class="d-inline-block align-text-top mr-30px ml-10px">
+                    <span>Spotify</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Premium
+                            </a>
+                            <ul>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Premium Individual</a></li><br>
+                                    <li><a class="dropdown-item" href="#">Premium Duo</a></li><br>
+                                    <li><a class="dropdown-item" href="#">Premium Family</a></li><br>
+                                    <li> <a class="dropdown-item" href="#">Premium Student</a></li><br>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="download-link">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------------container2----------->
+        <style>
+            .container-fluid {
+                background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
+                background-color: rgb(108, 14, 224);
+                display: flex;
+                background-size: cover;
+            }
+
+            .spotify-container-fluid {
+                padding: 20px;
+                 text-align: center;
+                padding-top: 70px;
+                padding-left: 50px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                position: relative;
+                height: 100vh;
+
+                color: #fff;
+                font-family: Arial, sans-serif;
+            }
+
+            .spotify-image {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                z-index: 1;
+                height: 575px;
+                margin-left: 10px;
+                flex-basis: 35%;
+                bottom: 0px;
+                margin-top: 60px;
+             
+                position: absolute;
+                padding-top: 100px;
+    
+            }
+            .spotify-image img{
+                border-radius: 7px;
+            }
+            .spotify-heading {
+                font-size: 100px;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 20px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 75%;
+                margin-right: 80px;
+            }
+
+            .spotify-button {
+                display: inline-block;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .spotify-button .btn {
+                padding: 14px 28px;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+
+           
+        </style>
+      <div>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="spotify-container-fluid">
+                            <!-- Hidden on phones and tablets, visible on desktops (medium and up) -->
+                            <div class="d-none d-sm-none d-md-block col-md-5">
+                                <img src="spotify images/phonespb.PNG" alt="Spotify Logo"
+                                    class="spotify-image img-fluid rounded" style="border-radius: 13%;">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="heading">
+                                    <h1 class="spotify-heading mt-4 mt-md-0" style="font-weight: 900; font-size: 2.5rem;">Play
+                                        millions of songs and podcasts, for free.</h1>
+                                </div>
+                                <div class="spotify-button mt-4">
+                                    <a href="#" class="btn btn-light">GET SPOTIFY FREE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+        <!----------------container2----------->
+
+
+        <style>
+            .container2 {
+                padding: 50px 0;
+                display: block;
+                unicode-bidi: isolate;
+                margin: 0px auto;
+            }
+
+            .benefit-item {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+                padding: 0 20px;
+            }
+
+            .benefit-icon {
+         
+                margin-right: 40px;
+                margin-bottom: 20px;
+         
+            }
+
+            .benefit-icon img {
+                flex-grow: 1;
+                margin-right: 20px;
+                width: 142px;
+                height: 142px;
+                -webkit-box-flex: 1;
+                display: inline-block;
+                background-position: center top;
+            }
+
+            .benefit-content {
+                flex: 1;
+                padding-left: 20px;
+            }
+
+            .benefit-content h3 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .benefit-content p {
+                font-size: 16px;
+            }
+
+          
+
+            .content {
+                text-align: center;
+                justify-items: center;
+                max-width: 100%;
+               
+                padding: 35px 15px;
+                display: block;
+
+                unicode-bidi: isolate;
+                background-color: #fff;
+            }
+
+            .list-unstyled {
+                display: flex;
+            }
+
+            .benefit-content {
+                display: inline-block;
+                width: 100%;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                margin: 16px 0px;
+            }
+
+            .content ul {
+                margin-block-start: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+                unicode-bidi: isolate;
+                margin-bottom: 10px;
+                display: flex;
+            }
+
+          
+            .benefit-details.benefit-content {
+                line-height: 1.5;
+                font-size: 16px;
+                padding: 0px;
+            }
+
+            .benefit-details.benefit-content-headings {
+                font-weight: bold;
+                margin-bottom: 10px;
+                font-size: 21px;
+                padding: 0px;
+                line-height: 1.3em;
+            }
+            @media (max-width: 992px) {
+    .benefit-item {
+        height: auto;
+    }
+}
+            .benefit-item {
+                box-sizing: border-box;
+                margin-block: 0px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: inherit;
+                justify-content: space-around;
+            }
+section{
+    display: block;
+    unicode-bidi: isolate;}
+
+    .spotify-sections{
+        overflow: auto;
+        background: var(--background-base, inherit);
+
+    }
+ @media (min-width: 768px) {
+    .benefit-item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+  .benefit-lists{
+   
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+ 
+        
+           
+        </style>
+
+<section class="spotify-sections">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="text-center">
+                    <h2 class="mb-10">Why Spotify?</h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <img src="https://i.scdn.co/image/ab671c3d0000f430678067184805befd38aa0f57"
+                                            alt="Play Icon">
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h3 class="benefit-content-headings">Play your favorites</h3>
+                                        <p class="benefit-details">Listen to the songs you love, and discover new music
+                                            and podcasts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <img src="https://i.scdn.co/image/ab671c3d0000f430a6f822749d5c25c32ee31d66"
+                                            alt="Pause Icon">
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h3 class="benefit-content-headings">Playlists made easy</h3>
+                                        <p class="benefit-details">We'll help you make playlists. Or enjoy playlists
+                                            made by music experts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <img src="https://i.scdn.co/image/ab671c3d0000f430eb43023b5332389f5094530d"
+                                            alt="Heart Icon">
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h3 class="benefit-content-headings">Make it yours</h3>
+                                        <p class="benefit-details">Tell us what you like, and we'll recommend music for
+                                            you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <img src="https://i.scdn.co/image/ab671c3d0000f4309430062bc28461dc8fbde6bc"
+                                            alt="Save Icon">
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h3 class="benefit-content-headings">Save mobile data</h3>
+                                        <p class="benefit-details">To use less data when you play music, turn on Data
+                                            Saver in Settings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                <!--------container3--------->
+                <style>
+                    .container3 {
+                        text-align: center;
+
+                        background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+                        min-height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #f0f0f0;
+                    }
+
+                    .single-line-heading {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 50px;
+                        line-height: 1;
+                        white-space: nowrap;
+                        max-width: 100%;
+
+                    }
+                </style>
+
+<div>
+    <section>
+                <div class="container3 mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="mb-3" style="color: #fff; font-weight: 700; font-size: 50px;">It's free.</h2>
+                            <h2 class=" single-line-heading mb-0"
+                                style="color: #fff; font-weight: 700; font-size: 50px; margin-left: -20px;">No credit
+                                card required.</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</div>
+                <!---------container4---------->
+                <style>
+                    .accordion-header .accordion-button {
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                </style>
+
+                <div class="container4 pl-50px">
+                    <div class="row " style="justify-content: space-around;">
+                        <div class="col-md-8 col-12 text-center mb-3">
+                            <div class="accordion" id="faqAccordion">
+                                <section class="bg-white py-5 pl-10px ml-10px">
+
+                                    <header class="header"> 
+                                        <h2 class="questions"
+                                            style="text-align: center; font-size: 45px; font-weight: 700; ">Got
+                                            questions?</h2>
+                                    </header>
+                                    <br>
+                                    <h2 class="accordion-header" id="headingOne" style="font-weight: 800;">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            How do I create a playlist?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Playlists are a great way to save collections of music, either for your own
+                                            listening or to share. To create one:
+                                            <ol>
+                                                <li>Tap Your Library.</li>
+                                                <li>Tap <strong>CREATE</strong>.</li>
+                                                <li>Give your playlist a name.</li>
+                                                <li>Start adding songs (and we'll help you along).</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            How do I activate Data Saver mode?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            To activate Data Saver mode:
+                                            <ol>
+                                                <li>Tap <strong>Home</strong>.</li>
+                                                <li>Tap <strong>Settings</strong>.</li>
+                                                <li>Tap <strong>Data Saver</strong>.</li>
+                                                <li>Switch on Data Saver.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Is it only possible to shuffle play music?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Any playlist with the shuffle icon will play on shuffle. Some playlists
+                                            won't have the shuffle icon, so you can tap any song to play it.
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Where can I find Podcasts?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Tap <strong>Search</strong>. Under <strong>Browse All</strong>, tap
+                                            Podcasts.
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                        </section>
+</div>
+                        <!----------container5---------->
+                        <style>
+                            .container6 {
+                                text-align: center;
+                                background: url(https://www.scdn.co/i/free/lets-play.svg) center center / 100% no-repeat, linear-gradient(-155deg, rgb(108, 14, 224) 55%, rgb(240, 55, 166) 115%) rgb(108, 14, 224);
+                                display: block;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .container6 {
+                                padding: 250px 50px;
+                                color: #fff;
+                                /* White text */
+
+
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                            }
+
+                            .ready {
+                                font-weight: 800;
+                                font-size: 50px;
+                                /* Responsive font size based on viewport width */
+                                margin-bottom: 30px;
+                            }
+
+
+
+
+                            @media (max-width: 768px) {
+                                .ready {
+                                    font-size: 5vw;
+                                }
+
+                                .btn-primary {
+                                    font-size: 50px;
+                                    padding: 35px 15px;
+                                }
+                            }
+
+                            .single-line-heading {
+                                color: #fff;
+                                font-weight: 700;
+                                font-size: 50px;
+                                line-height: 1;
+                                white-space: nowrap;
+                                max-width: 100%;
+                            }
+                        </style>
+
+
+                        <div class="container6 mt-5 pl-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-8  col-12 text-center">
+                                    <h2 class="single-line-heading mb-0 ml-10px mr-100%"
+                                        style="color: #fff; font-weight: 700; font-size: 50px; padding-right: 100px; margin-right: 100p;">
+                                        Ready?Let's play</h2>
+                                    <div class="spotify-button col-auto mb-10px">
+                                        <a href="#" class="btn btn-light">GET SPOTIFY FREE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-------------foooter----------->
+                    <style>
+                        .details a,
+                        ul a {
+                            color: #fff;
+                            /* Set all links in the footer to white */
+                        }
+
+                        .social-icons a {
+                            color: #fff;
+                        }
+
+                        .social-icons a:hover {
+                            color: #18cc3c;
+                        }
+
+                        .text-right a {
+                            color: #fff;
+                        }
+
+                        .list-inline-item a {
+                            color: #fff;
+                            justify-content: start;
+                            padding-left: -120px;
+                        }
+
+                        .list-inline-item a:hover {
+                            text-decoration: none;
+                            color: #08962e;
+                        }
+                        .container5{
+                            background: #000;
+                        }
+                    </style>
+
+                    <div class="container5 text-light p-5">
+
+                        <nav>
+                            <div class="spotify-icon ml-30px p-10px">
+                                <img src="spotify images/spoweb.png" alt="" class="icon"
+                                    style="width:40px; height: 30px;">
+                                <h2 class="spotify mt--2 ml-20px" style="font-weight: 600;">Spotify</h2>
+                            </div>
+                        </nav>
+                        <div class="row footer">
+                            <div class="col-md-3 ">
+                                <h5 class="footer-headings" style="color: #626262;">Company</h5>
+                                <ul class="footer deatils">
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Jobs</a></li>
+                                    <li><a href="">For the Record</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 ">
+                                <h5 class="footer-headings" style="color: #626262;">Communities</h5>
+                                <ul class="footer deatils">
+                                    <li><a href="">For Artists</a></li>
+                                    <li><a href="">Developers</a></li>
+                                    <li><a href="">Advertising</a></li>
+                                    <li><a href="">Investors</a></li>
+                                    <li><a href="">Vendors</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 ">
+                                <h5 class="footer-headings" style="color: #626262;">Useful links</h5>
+                                <ul class="footer deatils">
+                                    <li><a href="">Support</a></li>
+                                    <li><a href="">Web Player</a></li>
+                                    <li><a href="">Free Mobile App</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 ">
+                                <h5 class="footer-headings" style="color: #626262;">Spotify Plans</h5>
+                                <ul class="footer deatils">
+                                    <li><a href="">Premium Individual</a></li>
+                                    <li><a href="">Premium Duo</a></li>
+                                    <li><a href="">Premium Family</a></li>
+                                    <li><a href="">Premium Student</a></li>
+                                    <li><a href="">Spotify Free</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 ">
+                                <ul class="social-icons">
+                                    <li><a href="https://www.instagram.com/_minsha_min?igsh=MTBiZHpsOHR3czQ5eg=="
+                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/fathima-minsha-6a742227a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6  text-right">
+                                <a href="#"><i class="fa-solid fa-earth-asia"></i>India (English)</a>
+                            </div>
+                        </div>
+                        <div class="row mt-3 ">
+                            <div class="col-md-12">
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item"><a href=""><span class="list item"
+                                                style="color: #626262; font-size: 16px; font-weight: 400; ">Legal</span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href=""> <span class="list item"
+                                                style="color: #626262; font-size: 16px;">Safety &amp; Privacy
+                                                Center</span></a></li>
+                                    <li class="list-inline-item"><a href=""><span class="list item"
+                                                style="color: #626262; font-size: 16px;">Privacy Policy</span></a></li>
+                                    <li class="list-inline-item"><a href=""><span class="list item"
+                                                style="color: #626262; font-size: 16px;">Cookies</span></a></li>
+                                    <li class="list-inline-item"><a href=""><span class="list item"
+                                                style="color: #626262; font-size: 16px;">About </span></a></li>
+                                    <li class="list-inline-item"><a href=""><span class="list item"
+                                                style="color: #626262; font-size: 16px;">Accessibility</span></a></li>
+                                </ul>
+                                <p class="text-center text-light mt-3">© 2024 Spotify AB</p>
+                            </div>
+                        </div>
+                    </div>
+</div>
+                    <!-------------checking---------->
+</div>
+
+                    <!-- Bootstrap JS and dependencies -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+                    <!-- jQuery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                    <!-- Custom Script -->
+                    <script>
+                        // JavaScript/jQuery to show toggled items from the right side when clicked
+                        $(document).ready(function () {
+                            $('.navbar-nav .dropdown-toggle').on('click', function (e) {
+                                var $el = $(this).next('.dropdown-menu');
+                                var isVisible = $el.is(':visible');
+                                $('.navbar-nav .dropdown-menu').removeClass('show');
+                                if (!isVisible) {
+                                    $el.addClass('show');
+                                }
+                            });
+
+                            // Close dropdowns when clicking outside
+                            $(document).on('click', function (e) {
+                                if (!$(e.target).closest('.navbar-nav').length) {
+                                    $('.navbar-nav .dropdown-menu').removeClass('show');
+                                }
+                            });
+                        });
+                    </script>
+
+</body>
+
+</html>
